@@ -19,8 +19,8 @@
         <fieldset>
             <legend>オプション</legend>
             <p>
-                <label for="customRange1">文字数：{{ mojisuu }}</label>
-                <input type="range" v-model="mojisuu" class="custom-range" value="8" min="4" max="20" id="customRange1">
+                <label for="customRange1">文字数：{{ digits }}</label>
+                <input type="range" v-model="digits" class="custom-range" value="8" min="4" max="20" id="customRange1">
             </p>
             <div class="custom-control custom-checkbox">
                 <table class="table">
@@ -43,7 +43,7 @@
             </div>
         </fieldset>
         <p>
-            <button type="button" class="btn btn-primary btn-lg btn-block" v-on:click="sougou_generate">Block level button</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" v-on:click="sougou_generate">Generate</button>
         </p>
         <div id="area">
 

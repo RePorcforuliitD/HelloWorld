@@ -1,7 +1,7 @@
 new Vue({
     el: "#app",
     data: {
-        mojisuu: "8",
+        digits: "8",
         numbers: false,
         symbols: false,
         words: [],
@@ -13,7 +13,7 @@ new Vue({
             var seed_symbols = "!#$%&";
             var seed;
 
-            var length = Number(this.mojisuu);
+            var length = Number(this.digits);
 
             seed = seed_letters + seed_letters.toUpperCase();
             if (this.numbers) {
